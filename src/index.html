@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Recintos do Zoológico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gestão de Recintos do Zoológico</h1>
+
+        <form id="animalForm">
+            <label for="especie">Selecione a espécie:</label>
+            <select id="especie">
+                <option disabled selected >Selecione</option>
+                <option value="GIRAFA">Elefante</option>
+                <option value="LEAO">Leão</option>
+                <option value="LEOPARDO">Leopardo</option>
+                <option value="CROCODILO">Crocodilo</option>
+                <option value="MACACO">Macaco</option>
+                <option value="GAZELA">Gazela</option>
+                <option value="HIPOPOTAMO">Hipopótamo</option>
+                <option value="GIRAFA">Girafa</option>
+            </select>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" min="0" value="0">
+
+            <button type="submit">Analisar Recintos</button>
+        </form>
+
+        <div id="resultados"></div>
+    </div>
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
